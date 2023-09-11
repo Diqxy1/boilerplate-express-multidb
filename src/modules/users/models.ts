@@ -1,7 +1,5 @@
-import { ObjectID } from 'typeorm';
-
 export interface ResponseUserModel {
-  id: ObjectID;
+  id: string;
   name: string;
   dateOfBirth: Date;
   email: string;
