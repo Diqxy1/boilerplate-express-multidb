@@ -2,15 +2,14 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  ObjectID,
-  ObjectIdColumn,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 
 @Entity()
 export default class Users {
-  @ObjectIdColumn()
-  id: ObjectID;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   tenant: string;
